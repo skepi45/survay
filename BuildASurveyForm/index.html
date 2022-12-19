@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title" class = "text-center">
+        freeCodeCamp Survey Form
+    </h1>
+    <p id="description" class = "description text-center">
+        Thank you for taking the time to help us improve the platform
+    </p>
+    
+    <form id ="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Your Name:</label>
+            <br>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Your email:</label>
+            <br>
+            <input type="email" id="email" name="email" class="form-control" placeholder="abc@example.com" input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label id="number-label" for="number">
+                Age
+                <span class="Clue">(Optional)</span>
+            </label>
+            <br>
+            <input type="number" id="number" name="number" class="form-control" min="0" max="100" step="1" placeholder="30">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id ="dropdown" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value ="student">Student</option>
+                <option value ="job">Full Time Job </option>
+                <option value ="learner">Full Time Learner </option>
+                <option value ="preferNo">Prefer not to say </option>
+                <option value ="other">Other</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                <input type="radio" id="radio" name="recommand" class="input-radio" value="definitely" checked>
+                Definitely
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" id="radio" name="recommand" class="input-radio" value="maybe">
+                May be
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" id="radio" name="recommand" class="input-radio" value="notsure">
+                Not sure
+            </label>
+        </div>
+        <br>
+
+
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="favourate" id="dropdown1" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="opensource">Open Source</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <p>
+                What would you like to see improved? 
+                <span class="Clue">(Check all that apply)</span>
+            </p>
+            <input type="checkbox" id="front-end-prject" name="cb1" class="input-checkbox" value="Front-end Projects">
+            <label for="front-end-prject">Front-end Projects</label><br>
+            
+            <input type="checkbox" id="back-end-prject" name="cb2" class="input-checkbox" value="Back-end Projects">
+            <label for="back-end-prject">Back-end Projects</label><br>
+          
+            <input type="checkbox" id="data-visualization" name="cb3" class="input-checkbox" value="Data Visualization">
+            <label for="data-visualization">Data Visualization</label><br>
+           
+            <input type="checkbox" id="challenges" name="cb4" class="input-checkbox" value="Challenges">
+            <label for="challenges">Challenges</label><br>
+            
+            <input type="checkbox" id="open-source-community" name="cb5" class="input-checkbox" value=">Open-Source-Community">
+            <label for="open-source-community">Open-Source-Community</label><br>
+          
+            <input type="checkbox" id="gitter-help-room" name="cb6" class="input-checkbox" value="Gitter Help Room">
+            <label for="gitter-help-room">Gitter Help Room</label><br>
+           
+            <input type="checkbox" id="videos" name="cb7" class="input-checkbox" value="Videos">
+            <label for="videos">Videos</label><br>
+          
+            <input type="checkbox" id="city-meetups" name="cb8" class="input-checkbox" value="City Meetups">
+            <label for="city-meetups">City Meetups</label><br>
+           
+            <input type="checkbox" id="wiki" name="cb9" class="input-checkbox" value="Wiki">
+            <label for="wiki">Wiki</label><br>
+          
+            <input type="checkbox" id="forum" name="cb10" class="input-checkbox" value="Forum">
+            <label for="forum">Forum</label><br>
+         
+            <input type="checkbox" id="additional-courses" name="cb11" class="input-checkbox" value="Additional Courses">
+            <label for="additional-courses">Additional Courses</label><br>
+        </div>
+        <br>
+
+        <div id="survay-comment">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <br>
+   
+        <div id="submit-button">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+
+    </form>
+    
+</body>
+</html>
